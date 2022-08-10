@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form method="get">
+            Nombre:
+            <input type="text" name="busca" />
+            <input type="submit" value="Buscar" />
+        </form>
+
+        <h2>resultado:  {{ nombre }}</h2>
+
+        <script type="application/javascript">
+            var busqueda = new URLSearchParams(Document.location.search);
+            if (busqueda.has("nombre")){
+                documentos.getElementById("resuñtado".innerHTML = "Resultado:  " + busqueda.get("nombre"))
+            }
+        </script>
+    </body>
+</html>
